@@ -13,4 +13,12 @@ button.addEventListener('click', () => {
     const answer = document.getElementById('answer');
     answer.textContent = answers[randomAnswer];
 
+    const colors = ['red', 'purple', 'blue'];
+    const randomIdx = getRandomNumber(colors.length);
+    console.log(randomIdx);
+    console.log(colors[randomIdx]);
+    
+    const header = document.getElementById('header');
+    header.style.color = colors[randomIdx];
+
 });
